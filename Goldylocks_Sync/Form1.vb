@@ -9,7 +9,7 @@ Imports MySql.Data
 Public Class Form1
 
     'nome e varsao da aplicacao
-    Public Const versao As String = "GoldyLocks Sync 0.7a"
+    Public Const versao As String = "GoldyLocks Sync 0.8"
 
     'constantes para o EAN-13
     Private Const N As String = "N"
@@ -265,7 +265,7 @@ Public Class Form1
 
 
         If chkcc.Checked Then
-            Dim cmdcc As New SqlCommand("select customerledgeraccount.PartyID, Sum(CustomerLedgerAccount.TotalAmount) as 'Total' from CustomerLedgerAccount group by CustomerLedgerAccount.PartyID;")
+            Dim cmdcc As New SqlCommand("select customerledgeraccount.PartyID, Sum(CustomerLedgerAccount.TotalAmount) as 'Total' from CustomerLedgerAccount group by CustomerLedgerAccount.PartyID having Sum(CustomerLedgerAccount.TotalAmount) > 0.01", conn)
             Dim readercc As SqlDataReader = cmdcc.ExecuteReader
 
             mysqlcmd.CommandText = "delete from clientes_cc"
@@ -273,9 +273,10 @@ Public Class Form1
 
             While readercc.Read
                 c1 = readercc.GetInt64(0)
-                c2 = readercc.GetDouble(1)
+                c2 = readercc.GetDouble(1).ToString.Replace(",", ".")
 
-                mysqlcmd.CommandText = "insert into clientes_cc (id_cliente, valor_cc) VALUES (" + c1 + "," + c2 + ")"
+                ' MessageBox.Show("insert into clientes_cc (id_cliente, valor_cc) VALUES (" + c1 + "," + c2 + ")")
+                mysqlcmd.CommandText = "insert into clientes_cc (id_cliente, valor_cc) VALUES (" + c1 + ",'" + c2 + "')"
                 mysqlcmd.ExecuteNonQuery()
             End While
 
