@@ -1,0 +1,55 @@
+C:\Users\helder\AppData\Local\Temporary Projects\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.exe
+C:\Users\helder\AppData\Local\Temporary Projects\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.pdb
+C:\Users\helder\AppData\Local\Temporary Projects\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.xml
+C:\Users\helder\AppData\Local\Temporary Projects\Goldylocks_Sync\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\helder\AppData\Local\Temporary Projects\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.Form1.resources
+C:\Users\helder\AppData\Local\Temporary Projects\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.Resources.resources
+C:\Users\helder\AppData\Local\Temporary Projects\Goldylocks_Sync\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\helder\AppData\Local\Temporary Projects\Goldylocks_Sync\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\helder\AppData\Local\Temporary Projects\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.exe
+C:\Users\helder\AppData\Local\Temporary Projects\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.xml
+C:\Users\helder\AppData\Local\Temporary Projects\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.pdb
+C:\Users\helder\documents\visual studio 2010\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.xml
+C:\Users\helder\documents\visual studio 2010\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.pdb
+C:\Users\helder\documents\visual studio 2010\Projects\Goldylocks_Sync\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.exe
+C:\Users\helder\documents\visual studio 2010\Projects\Goldylocks_Sync\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.pdb
+C:\Users\helder\documents\visual studio 2010\Projects\Goldylocks_Sync\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.xml
+C:\Users\helder\documents\visual studio 2010\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\helder\documents\visual studio 2010\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.Form1.resources
+C:\Users\helder\documents\visual studio 2010\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.Resources.resources
+C:\Users\helder\documents\visual studio 2010\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\helder\documents\visual studio 2010\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\helder\documents\visual studio 2010\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.exe
+C:\Users\helder\documents\visual studio 2010\Projects\Goldylocks_Sync\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.exe.manifest
+C:\Users\helder\documents\visual studio 2010\Projects\Goldylocks_Sync\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.application
+C:\Users\helder\documents\visual studio 2010\Projects\Goldylocks_Sync\Goldylocks_Sync\bin\Debug\MySql.Data.dll
+C:\Users\helder\documents\visual studio 2010\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.exe.manifest
+C:\Users\helder\documents\visual studio 2010\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.application
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.exe
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.xml
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.pdb
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\Goldylocks_Sync\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.exe.manifest
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\Goldylocks_Sync\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.application
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\Goldylocks_Sync\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.exe
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\Goldylocks_Sync\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.pdb
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\Goldylocks_Sync\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.xml
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.vbprojResolveAssemblyReference.cache
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.Form1.resources
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.Resources.resources
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.vbproj.GenerateResource.Cache
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.exe.manifest
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\Goldylocks_Sync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.application
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\GoldylocksSync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.exe
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\GoldylocksSync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.xml
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\GoldylocksSync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.pdb
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\GoldylocksSync\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.exe.manifest
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\GoldylocksSync\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.application
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\GoldylocksSync\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.exe
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\GoldylocksSync\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.pdb
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\GoldylocksSync\Goldylocks_Sync\bin\Debug\Goldylocks_Sync.xml
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\GoldylocksSync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.vbprojResolveAssemblyReference.cache
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\GoldylocksSync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.Form1.resources
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\GoldylocksSync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.Resources.resources
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\GoldylocksSync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.vbproj.GenerateResource.Cache
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\GoldylocksSync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.exe.manifest
+C:\Users\Burnspirit\Documents\Visual Studio 2013\Projects\GoldylocksSync\Goldylocks_Sync\obj\x86\Debug\Goldylocks_Sync.application
