@@ -43,6 +43,7 @@ Partial Class Form1
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.chkcc = New System.Windows.Forms.CheckBox()
         Me.chketiquetas = New System.Windows.Forms.CheckBox()
         Me.chkdescontos = New System.Windows.Forms.CheckBox()
         Me.lblupdate = New System.Windows.Forms.Label()
@@ -86,7 +87,7 @@ Partial Class Form1
         Me.PEan = New System.Windows.Forms.PictureBox()
         Me.printer = New System.Drawing.Printing.PrintDocument()
         Me.tmr_etiquetas = New System.Windows.Forms.Timer(Me.components)
-        Me.chkcc = New System.Windows.Forms.CheckBox()
+        Me.chkdesligar = New System.Windows.Forms.CheckBox()
         Me.MenuStrip2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
@@ -263,6 +264,7 @@ Partial Class Form1
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.chkdesligar)
         Me.GroupBox4.Controls.Add(Me.chkcc)
         Me.GroupBox4.Controls.Add(Me.chketiquetas)
         Me.GroupBox4.Controls.Add(Me.chkdescontos)
@@ -279,7 +281,19 @@ Partial Class Form1
         Me.GroupBox4.Size = New System.Drawing.Size(832, 65)
         Me.GroupBox4.TabIndex = 9
         Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Opcoes"
+        Me.GroupBox4.Text = "Opções"
+        '
+        'chkcc
+        '
+        Me.chkcc.AutoSize = True
+        Me.chkcc.Checked = True
+        Me.chkcc.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.chkcc.Location = New System.Drawing.Point(168, 19)
+        Me.chkcc.Name = "chkcc"
+        Me.chkcc.Size = New System.Drawing.Size(107, 17)
+        Me.chkcc.TabIndex = 11
+        Me.chkcc.Text = "Contas Correntes"
+        Me.chkcc.UseVisualStyleBackColor = True
         '
         'chketiquetas
         '
@@ -317,7 +331,7 @@ Partial Class Form1
         'chkupdate
         '
         Me.chkupdate.AutoSize = True
-        Me.chkupdate.Location = New System.Drawing.Point(540, 19)
+        Me.chkupdate.Location = New System.Drawing.Point(589, 19)
         Me.chkupdate.Name = "chkupdate"
         Me.chkupdate.Size = New System.Drawing.Size(86, 17)
         Me.chkupdate.TabIndex = 7
@@ -327,7 +341,7 @@ Partial Class Form1
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(603, 39)
+        Me.Label9.Location = New System.Drawing.Point(652, 39)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(44, 13)
         Me.Label9.TabIndex = 4
@@ -337,7 +351,7 @@ Partial Class Form1
         '
         Me.cmbupdatetime.FormattingEnabled = True
         Me.cmbupdatetime.Items.AddRange(New Object() {"5", "10", "20", "30", "60", "120", "180", "360", "720"})
-        Me.cmbupdatetime.Location = New System.Drawing.Point(540, 38)
+        Me.cmbupdatetime.Location = New System.Drawing.Point(589, 38)
         Me.cmbupdatetime.Name = "cmbupdatetime"
         Me.cmbupdatetime.Size = New System.Drawing.Size(57, 21)
         Me.cmbupdatetime.TabIndex = 3
@@ -718,17 +732,15 @@ Partial Class Form1
         Me.tmr_etiquetas.Enabled = True
         Me.tmr_etiquetas.Interval = 5000
         '
-        'chkcc
+        'chkdesligar
         '
-        Me.chkcc.AutoSize = True
-        Me.chkcc.Checked = True
-        Me.chkcc.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.chkcc.Location = New System.Drawing.Point(168, 19)
-        Me.chkcc.Name = "chkcc"
-        Me.chkcc.Size = New System.Drawing.Size(107, 17)
-        Me.chkcc.TabIndex = 11
-        Me.chkcc.Text = "Contas Correntes"
-        Me.chkcc.UseVisualStyleBackColor = True
+        Me.chkdesligar.AutoSize = True
+        Me.chkdesligar.Location = New System.Drawing.Point(428, 42)
+        Me.chkdesligar.Name = "chkdesligar"
+        Me.chkdesligar.Size = New System.Drawing.Size(89, 17)
+        Me.chkdesligar.TabIndex = 12
+        Me.chkdesligar.Text = "Desligar Auto"
+        Me.chkdesligar.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -826,5 +838,6 @@ Partial Class Form1
     Friend WithEvents cmbtamanho As System.Windows.Forms.ComboBox
     Friend WithEvents cmbimpressoras As System.Windows.Forms.ComboBox
     Friend WithEvents chkcc As System.Windows.Forms.CheckBox
+    Friend WithEvents chkdesligar As System.Windows.Forms.CheckBox
 
 End Class

@@ -9,7 +9,7 @@ Imports MySql.Data
 Public Class Form1
 
     'nome e varsao da aplicacao
-    Public Const versao As String = "GoldyLocks Sync 0.8"
+    Public Const versao As String = "GoldyLocks Sync 0.8.1"
 
     'constantes para o EAN-13
     Private Const N As String = "N"
@@ -153,7 +153,7 @@ Public Class Form1
 
         Dim i As Integer = 0
         Dim querys As Integer = 0
-        Dim c1, c2, c3, c4, c5, c6 As String
+        Dim c1, c2, c3, c4, c5, c6, c7 As String
         Dim connstring As String
         Dim mysqlconn As New MySqlClient.MySqlConnection
 
@@ -263,24 +263,47 @@ Public Class Form1
             readerc.Close()
         End If
 
-
+        'enviar contas correntes
         If chkcc.Checked Then
-            Dim cmdcc As New SqlCommand("select customerledgeraccount.PartyID, Sum(CustomerLedgerAccount.TotalAmount) as 'Total' from CustomerLedgerAccount group by CustomerLedgerAccount.PartyID having Sum(CustomerLedgerAccount.TotalAmount) > 0.01", conn)
+            'totais de contas correntes
+            Dim cmdcc As New SqlCommand("select customerledgeraccount.PartyID, Sum(CustomerLedgerAccount.TotalPendingAmount) as 'Total' from CustomerLedgerAccount group by CustomerLedgerAccount.PartyID having Sum(CustomerLedgerAccount.TotalPendingAmount) != 0", conn)
             Dim readercc As SqlDataReader = cmdcc.ExecuteReader
 
+            'eliminar contas correntes existentes
             mysqlcmd.CommandText = "delete from clientes_cc"
             mysqlcmd.ExecuteNonQuery()
 
             While readercc.Read
                 c1 = readercc.GetInt64(0)
                 c2 = readercc.GetDouble(1).ToString.Replace(",", ".")
-
-                ' MessageBox.Show("insert into clientes_cc (id_cliente, valor_cc) VALUES (" + c1 + "," + c2 + ")")
                 mysqlcmd.CommandText = "insert into clientes_cc (id_cliente, valor_cc) VALUES (" + c1 + ",'" + c2 + "')"
                 mysqlcmd.ExecuteNonQuery()
             End While
-
             readercc.Close()
+
+
+            Dim cmddoccc As New SqlCommand("select CustomerLedgerAccount.PartyID as 'id_cliente', CustomerLedgerAccount.TransDocument as 'tipo_doc', CustomerLedgerAccount.TransSerial as 'doc_serie', CustomerLedgerAccount.TransDocNumber as 'doc_num', CustomerLedgerAccount.TotalAmount as 'total_documento', CustomerLedgerAccount.TotalPendingAmount as 'total_pendente', CONVERT(date,CustomerLedgerAccount.CreateDate,101) as 'data'  from CustomerLedgerAccount where CustomerLedgerAccount.TotalPendingAmount != 0 order by data;", conn)
+            Dim readerdocc As SqlDataReader = cmddoccc.ExecuteReader
+
+            'eliminar documentos existentes
+            mysqlcmd.CommandText = "delete from clientes_cc_documentos"
+            mysqlcmd.ExecuteNonQuery()
+
+            'inserir novos documentos pendentes
+            While readerdocc.Read
+                c1 = readerdocc.GetInt64(0)
+                c2 = readerdocc.GetString(1).Replace("'", "")
+                c3 = readerdocc.GetString(2).Replace("'", "")
+                c4 = readerdocc.GetInt64(3)
+                c5 = readerdocc.GetDouble(4).ToString.Replace(",", ".")
+                c6 = readerdocc.GetDouble(5).ToString.Replace(",", ".")
+                c7 = readerdocc.GetDateTime(6).ToString.Replace("'", "")
+
+                mysqlcmd.CommandText = "insert into clientes_cc_documentos (id_cliente, tipo_doc, doc_serie, doc_num, total_documento, total_pendente, data) VALUES (" + c1 + ",'" + c2 + "','" + c3 + "'," + c4 + ",'" + c5 + "','" + c6 + "','" + c7 + "')"
+                mysqlcmd.ExecuteNonQuery()
+            End While
+
+            readerdocc.Close()
         End If
 
 
@@ -479,6 +502,9 @@ Public Class Form1
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         escrever_config()
         actualizar()
+
+        'desligar o computador automaticamente apos a sincronizacao
+        If (chkdesligar.Checked = True) Then System.Diagnostics.Process.Start("shutdown", "-s")
     End Sub
 
     Private Sub txtquery_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -686,5 +712,9 @@ Public Class Form1
     Private Sub cmbimpressoras_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbimpressoras.SelectedIndexChanged
         printer.PrinterSettings.PrinterName = cmbimpressoras.Text 'impressora para as etiquetas
         detalhes_impressora()
+    End Sub
+
+    Private Sub GroupBox4_Enter(sender As Object, e As EventArgs) Handles GroupBox4.Enter
+
     End Sub
 End Class
